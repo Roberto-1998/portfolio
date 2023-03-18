@@ -5,6 +5,7 @@ import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { SectionWrapper } from '../hoc';
+import UpTextSection from './shared/UpTextSection';
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -28,10 +29,7 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      <UpTextSection title={'Overview.'} subtitle={'Introduction'} />
 
       <motion.p variants={fadeIn('', '', 0.1, 1)} className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'>
         Graduated in Industrial Engineering and with more than 2 years of experience in the continuous learning of web
