@@ -125,6 +125,9 @@
   animation: mulShdSpin 1.1s infinite ease;
   transform: translateZ(0);
 }
+.toast-message{
+  margin-top: 40px;
+}
 
 @keyframes mulShdSpin {
   0%,
