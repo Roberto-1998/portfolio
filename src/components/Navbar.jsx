@@ -1,12 +1,15 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { menu, close } from '../assets';
 import NavLinks from './shared/NavLinks';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+
+  const [isBackgroundSet, setBackground] = useState(false);
 
   const handleActive = (value) => {
     setActive(value);
@@ -16,8 +19,28 @@ const Navbar = () => {
     setToggle(!toggle);
   };
 
+  useEffect(() => {
+    const handleScroll = (event) => {
+      if (window.scrollY > 80) {
+        setBackground(true);
+      } else {
+        setBackground(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}>
+    <nav
+      className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 transition-all ease-linear ${
+        isBackgroundSet ? 'bg-primary' : ''
+      }`}
+    >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
         <Link
           to={'/'}
@@ -27,7 +50,10 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          ROBECODE
+          <img src={logo} alt='logo' width={'25px'} />
+          <h1>
+            MASTER <span className='text-[#009FD2]'>CODE&#60;&#47;&#62;</span>
+          </h1>
         </Link>
         <NavLinks active={active} handleActive={handleActive} handleToggle={handleToggle} />
 
