@@ -3,12 +3,16 @@ import 'react-vertical-timeline-component/style.min.css';
 
 import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
-import UpTextSection from './shared/UpTextSection';
+import { TopTextSection } from './shared';
 
 const ExperienceCard = ({ experience }) => {
   return (
     <VerticalTimelineElement
-      contentStyle={{ background: '#1d1836', color: '#fff' }}
+      contentStyle={{
+        background: 'linear-gradient(to right, #3A6073, #16222A)',
+
+        color: '#fff',
+      }}
       contentArrowStyle={{ borderRight: '7px solid #232631' }}
       iconStyle={{ background: experience.iconBg }}
       date={experience.date}
@@ -39,7 +43,7 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <UpTextSection title={'Work Experience.'} subtitle={'What i have done so far'} />
+      <TopTextSection title={'Work Experience.'} subtitle={'What i have done so far'} />
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>

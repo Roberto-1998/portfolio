@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { menu, close } from '../assets';
-import NavLinks from './shared/NavLinks';
+import { NavLinks } from './shared';
 import logo from '../assets/logo.png';
 
 const Navbar = () => {
@@ -38,7 +38,7 @@ const Navbar = () => {
   return (
     <nav
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 transition-all ease-linear ${
-        isBackgroundSet ? 'bg-primary' : ''
+        isBackgroundSet ? 'bg-black' : ''
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>

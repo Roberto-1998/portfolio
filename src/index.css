@@ -13,6 +13,41 @@
   color-scheme: dark;
 }
 
+.machine-animation{
+  white-space: nowrap;
+  border-right: 2px solid ;
+  width:12ch;
+
+  animation:typing 3s steps(12), blink 1s infinite alternate;
+  overflow: hidden;
+
+}
+.blue-gradient-card{
+  background: #16222A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #3A6073, #16222A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #3A6073, #16222A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border: 1px solid white;
+
+  color: rgb(252, 250, 250);
+  
+
+}
+.bg-form{
+  background: transparent;  
+}
+
+.cursor-rotate{
+   cursor: url(./assets//360.png),grab;;
+}
+
+@keyframes typing{
+  0% {width:0}
+}
+
+@keyframes blink{
+  50% {border-color: transparent;}
+}
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -33,12 +68,12 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.blue-gradient {
+  background: #009FD2;
+  background: linear-gradient(-90deg, #009FD2 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #009FD2 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }

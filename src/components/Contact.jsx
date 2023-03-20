@@ -5,8 +5,8 @@ import { styles } from '../styles';
 import { EarthCanvas } from './canvas';
 import { SectionWrapper } from '../hoc';
 import { slideIn } from '../utils/motion';
-import FormField from './shared/FormField';
 import { ToastContainer, toast } from 'react-toastify';
+import { FormField } from './shared';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Contact = () => {
@@ -73,8 +73,8 @@ const Contact = () => {
   };
 
   return (
-    <div className='xl:mt-12 xl:flex-row flex flex-col-reverse gap-10 overflow-hidden '>
-      <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='flex-[0.85] bg-black-100 p-8 rounded-2xl'>
+    <div className='xl:mt-12 xl:flex-row flex flex-col-reverse gap-10 overflow-hidden  '>
+      <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className='flex-[0.95] bg-form p-8 rounded-2xl '>
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
         <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col gap-8'>
@@ -106,7 +106,7 @@ const Contact = () => {
 
           <button
             disabled={disabledSubmit}
-            className={`bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl ${
+            className={`bg-[#009FD2] py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl ${
               disabledSubmit ? 'opacity-40 cursor-not-allowed' : ''
             } `}
             type='submit'
@@ -116,7 +116,10 @@ const Contact = () => {
         </form>
       </motion.div>
 
-      <motion.div variants={slideIn('right', 'tween', 0.2, 1)} className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'>
+      <motion.div
+        variants={slideIn('right', 'tween', 0.2, 1)}
+        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px] cursor-rotate'
+      >
         <EarthCanvas />
       </motion.div>
       <div className='mt-20'>

@@ -11,7 +11,7 @@ const FormField = ({ value, handleChange, placeholder, fieldName, fieldType = 't
           value={value}
           onChange={handleChange}
           placeholder={placeholder}
-          className='bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:text-[14px] text-white rounded-lg outline-none border-none font-medium'
+          className='bg-white py-4 px-6 placeholder:text-secondary placeholder:text-[14px] text-black rounded-lg outline-none border-none font-medium'
         />
       ) : (
         <input
@@ -20,7 +20,7 @@ const FormField = ({ value, handleChange, placeholder, fieldName, fieldType = 't
           value={value}
           onChange={handleChange}
           placeholder={placeholder}
-          className='bg-tertiary py-4 px-6 placeholder:text-secondary placeholder:text-[14px] text-white rounded-lg outline-none border-none font-medium'
+          className='bg-white py-4 px-6 placeholder:text-secondary placeholder:text-[14px] text-black rounded-lg outline-none border-none font-medium'
         />
       )}
     </label>

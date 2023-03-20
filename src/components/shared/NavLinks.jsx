@@ -16,7 +16,7 @@ const NavLinks = ({ active, handleActive, isSmart = false, handleToggle }) => {
           }}
           key={link.id}
           className={`
-           ${active === link.title ? 'text-red-500' : 'text-secondary'}
+           ${active === link.title ? 'text-[#009FD2]' : 'text-secondary'}
             ${
               isSmart
                 ? 'font-poppins font-medium cursor-pointer text-[16px] '
