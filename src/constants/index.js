@@ -120,7 +120,7 @@ const experiences = [
   },
   {
     title: 'Full Stack Developer',
-    company_name: 'GitHub - (Self Employed)',
+    company_name: 'GitHub',
     icon: github,
     iconBg: '#E6DEDD',
     date: 'April 2021 - March 2023',
