@@ -28,6 +28,7 @@ import landing_page from './landing_page.png';
 import shorten_link from './shorten_link.png';
 import social_network from './social_network.png';
 import world_countries from './world_countries.png';
+import calendar from './calendar.png';
 
 export {
   dofleini,
@@ -55,4 +56,5 @@ export {
   social_network,
   world_countries,
   shorten_link,
+  calendar,
 };

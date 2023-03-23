@@ -16,6 +16,7 @@ import {
   dofleini,
   github,
   ecommerce_techlines,
+  calendar,
   threejs,
   world_countries,
   shorten_link,
@@ -160,6 +161,38 @@ const projects = [
     ],
     image: ecommerce_techlines,
     source_code_link: 'https://techlines-7xpv.onrender.com/',
+  },
+  {
+    name: 'Calendar - MERN',
+    description: 'Calendar App with login and registration of users to set importants dates.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'nodejs',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'express',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'bootstrap',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: calendar,
+    source_code_link: 'https://calendar-backend-sage.vercel.app/',
   },
   {
     name: 'Sociopedia - Social Network',
