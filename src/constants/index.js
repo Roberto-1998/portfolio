@@ -22,6 +22,7 @@ import {
   shorten_link,
   landing_page,
   social_network,
+  beach_resort,
 } from '../assets';
 
 export const navLinks = [
@@ -193,6 +194,27 @@ const projects = [
     ],
     image: calendar,
     source_code_link: 'https://calendar-backend-sage.vercel.app/',
+  },
+  {
+    name: 'Beach Resort - REACT',
+    description:
+      'Beach Resort Website that show available rooms and allow to filter them according to they characteristics.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'html/css',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: beach_resort,
+    source_code_link: 'https://beach-resort-roan.vercel.app/',
   },
   {
     name: 'Sociopedia - Social Network',
