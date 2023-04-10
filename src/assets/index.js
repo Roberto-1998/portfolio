@@ -30,6 +30,7 @@ import social_network from './social_network.png';
 import world_countries from './world_countries.png';
 import calendar from './calendar.png';
 import beach_resort from './beach_resort.png';
+import deliveroo from './deliveroo.png';
 
 export {
   dofleini,
@@ -59,4 +60,5 @@ export {
   shorten_link,
   calendar,
   beach_resort,
+  deliveroo,
 };

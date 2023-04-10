@@ -23,6 +23,7 @@ import {
   landing_page,
   social_network,
   beach_resort,
+  deliveroo,
 } from '../assets';
 
 export const navLinks = [
@@ -134,6 +135,31 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: 'Deliveroo - React Native Mobile App',
+    description:
+      'Mobile application that shows the restaurants availables by type of food and allows you to select the dishes from the menu to create a delivery order.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'react native',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'tailwindCSS',
+        color: 'green-text-gradient',
+      },
+    ],
+    image: deliveroo,
+    source_code_link: 'https://expo.dev/@roberto_code_1998/deliveroo-clone',
+  },
   {
     name: 'Techlines - Ecommerce',
     description:
