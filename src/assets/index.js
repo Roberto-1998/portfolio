@@ -21,6 +21,7 @@ import threejs from './tech/threejs.svg';
 
 import dofleini from './dofleini.jfif';
 import github from './company/github.png';
+import guajiritos from './company/guajiritos.jpeg';
 import globe from './globe.png';
 
 import ecommerce_techlines from './ecommerce.png';
@@ -31,6 +32,7 @@ import world_countries from './world_countries.png';
 import calendar from './calendar.png';
 import beach_resort from './beach_resort.png';
 import deliveroo from './deliveroo.png';
+import uberclone from './uberclone.png';
 
 export {
   dofleini,
@@ -61,4 +63,6 @@ export {
   calendar,
   beach_resort,
   deliveroo,
+  guajiritos,
+  uberclone,
 };

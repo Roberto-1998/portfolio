@@ -24,6 +24,8 @@ import {
   social_network,
   beach_resort,
   deliveroo,
+  guajiritos,
+  uberclone,
 } from '../assets';
 
 export const navLinks = [
@@ -57,6 +59,10 @@ const services = [
   {
     title: 'Full Stack Developer',
     icon: creator,
+  },
+  {
+    title: 'Mobile Developer',
+    icon: mobile,
   },
 ];
 
@@ -113,12 +119,22 @@ const experiences = [
     company_name: 'Dofleini Software - (Full Time)',
     icon: dofleini,
     iconBg: '#383E56',
-    date: 'July 2022 - September 2022',
+    date: 'August 2022 - September 2022',
     points: [
       'Developing and maintaining web applications using React.js and other related technologies.',
       'Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.',
       'Implementing responsive design and ensuring cross-browser compatibility.',
       'Participating in code reviews and providing constructive feedback to other developers.',
+    ],
+  },
+  {
+    title: 'Frontend Developer',
+    company_name: 'Guajiritos - (Internship contract)',
+    icon: guajiritos,
+    iconBg: '#383E56',
+    date: 'January 2022 - February 2022',
+    points: [
+      'I participated in the development of projects associated with the state sector, contributing to the layout, responsive design and implementation of functionalities using Angular as the main development framework.',
     ],
   },
   {
@@ -135,6 +151,35 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: 'Uberclone - React Native Mobile App',
+    description:
+      'Mobile application that allows you to obtain directions between two user-defined places, using Google Maps services.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'javascript',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'react native',
+        color: 'pink-text-gradient',
+      },
+      {
+        name: 'tailwindCSS',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'google maps services',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: uberclone,
+    source_code_link: 'https://expo.dev/@roberto_code_1998/uber-clone?serviceType=classic&distribution=expo-go',
+  },
   {
     name: 'Deliveroo - React Native Mobile App',
     description:
