@@ -1,4 +1,4 @@
-# Uberclone - React Native Mobile App
+# Portfolio - React Web App
 
 
 
@@ -15,13 +15,12 @@
 
 ### Screenshot
 
-![](./assets/screenshots/1.png)
-![](./assets/screenshots/2.png)
-![](./assets/screenshots/3.png)
-![](./assets/screenshots/4.png)
-![](./assets/screenshots/5.png)
-![](./assets/screenshots/6.png)
-![](./assets/screenshots/7.png)
+![](./src/assets/screenshots/1.png)
+![](./src/assets/screenshots/2.png)
+![](./src/assets/screenshots/3.png)
+![](./src/assets/screenshots/4.png)
+![](./src/assets/screenshots/5.png)
+![](./src/assets/screenshots/6.png)
 
 
 
