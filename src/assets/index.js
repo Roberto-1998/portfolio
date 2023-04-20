@@ -33,6 +33,7 @@ import calendar from './calendar.png';
 import beach_resort from './beach_resort.png';
 import deliveroo from './deliveroo.png';
 import uberclone from './uberclone.png';
+import cujae from './cujae.jpeg';
 
 export {
   dofleini,
@@ -65,4 +66,5 @@ export {
   deliveroo,
   guajiritos,
   uberclone,
+  cujae,
 };

@@ -26,6 +26,7 @@ import {
   deliveroo,
   guajiritos,
   uberclone,
+  cujae,
 } from '../assets';
 
 export const navLinks = [
@@ -138,14 +139,13 @@ const experiences = [
     ],
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'GitHub',
-    icon: github,
+    title: 'Frontend Developer',
+    company_name: 'Universidad Tecnológica de La Habana "José Antonio Echeverría"​',
+    icon: cujae,
     iconBg: '#E6DEDD',
-    date: 'April 2021 - March 2023',
+    date: 'January 2021 - January 2022',
     points: [
-      'Since my time as a university student I have been partially dedicated to constant training in new technologies, tools, frameworks and good programming practices to raise my knowledge as a web developer.',
-      'I have developed several educational projects using the most popular tools on the market today.',
+      'I was linked to the Department of Business Informatics participating in the development of web applications integrating a professional work team for the design and implementation of functionalities.',
     ],
   },
 ];
